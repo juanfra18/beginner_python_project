@@ -1,0 +1,14 @@
+24567890,Verónica,Busto,1
+32098765,Perla,Pérez,1
+14567888,Guadalupe,Estévez,1
+29888456,Teodoro,Esparza,1
+33333333,Trinidad,Rendón,1
+10893451,Fidelia,Cuesta,2
+11111111,Itziar,Cabrera,2
+45454545,Albano,Delgado,2
+34765111,Julio,Bosque,2
+38761234,Benito,Casal,3
+41415609,Baudelio,Chávez,3
+29678653,Regina,Cardozo,3
+33676767,Diego,Maradona,3
+21655552,Carlos,López,3

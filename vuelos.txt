@@ -1,0 +1,4 @@
+1,Buenos Aires,Roma,Latam,50,5
+2,La Plata,Nueva York,Latam,100,4
+3,Córdoba,Nueva York,Aerolíneas Argentinas,75,5
+5,Buenos Aires,Nueva York,Latam,60,0
