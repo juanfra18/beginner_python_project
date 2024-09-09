@@ -1,23 +1,40 @@
-El trabajo final consiste en generar 2 archivos en los que se guardaran los datos de vuelos (número de vuelo, lugar de partida, destino, aerolínea, 
-cantidad máxima de pasajeros y cantidad de pasajeros en el vuelo) y en el otro archivo los datos de los pasajeros (dni, nombre, apellido, vuelo). 
-El programa deberá poseer un menú que tenga las siguientes opciones: gestión vuelos, gestión pasajeros, consultas y salir.
+# Flight and Passenger Management System - 2019 Python Course Project
 
-Cuando se entra al menú gestión vuelos se debería poder realizar las siguientes operaciones:
-1. Crear un vuelo
-2. Modificar datos de un vuelo (todos menos el número de vuelo y la cantidad de pasajeros en el vuelo).
-3. Eliminar un vuelo (en caso de que un vuelo posea algún pasajero asignado, se deberán borrar los pasajeros asignados o no se deberá permitir que el vuelo sea borrado
-   debido a esto, esto queda a decisión del alumno, es decir no deben existir pasajeros asignados a un vuelo que ya no existe).
+This repository contains the final project for a begginer's python programming course taken in 2019. The project is a flight and passenger management system that stores flight and passenger data across two text files and allows for various management and query operations via a menu interface.
 
-Cuando se entra al menú gestión pasajeros se debería poder realizar las siguientes operaciones:
-1. Agregar un pasajero y asignarle un vuelo (se podrá hacer esta asignación siempre y cuando el vuelo exista y no haya alcanzado su límite de capacidad. 
-   No se podrá asignar un mismo pasajero a un mismo vuelo más de una vez, es decir, no se debe repetir un mismo dni por vuelo).
-2. Modificar datos de un pasajero (en caso de modificar el vuelo al que el pasajero está asignado se deberá restar un pasajero en el vuelo a modificar y agregar un 
-   pasajero en el nuevo vuelo).
-3. Eliminar pasajero (Se deberá reducir el numero de pasajeros del vuelo al que estaba asignado este pasajero)
+## Structure
 
-CONSULTAS:
-1. Listar todos los vuelos
-2. Listar todos los vuelos de una aerolínea
-3. Listar todos los pasajeros
-4. Listar todos los pasajeros de un vuelo
-5. Listar vuelos por destino.
+- **Flights File**: Stores flight data, including flight number, departure location, destination, airline, maximum passenger capacity, and the current number of passengers on the flight.
+- **Passengers File**: Stores passenger information, including DNI, first name, last name, and assigned flight.
+
+## Features
+
+The system includes a CLI menu with the following options:
+
+### Flight Management
+- **Create a flight**: Add a new flight with specified details.
+- **Modify a flight**: Edit any details of a flight except the flight number and the current number of passengers.
+- **Delete a flight**: Remove a flight from the system. If the flight has assigned passengers, either remove those passengers or prevent the deletion until the passengers are reassigned or removed.
+
+### Passenger Management
+- **Add a passenger**: Assign a passenger to an existing flight as long as the flight has capacity. Prevent duplicate passenger assignments to the same flight.
+- **Modify a passenger**: Update passenger information, including reassignment to a different flight if needed.
+- **Delete a passenger**: Remove a passenger from the system and update the passenger count for their assigned flight.
+
+### Queries
+- List all flights
+- List flights by airline
+- List all passengers
+- List passengers for a specific flight
+- List flights by destination
+
+## How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/juanfra18/beginner_python_project.git
+   ```
+2. Navigate to the project directory and run the main program `Programa.py`.
+
+## Requirements
+- Python 3.x
